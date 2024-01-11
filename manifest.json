@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "redirect_to_useful",
+  "description": "use useful website instead of social media",
+  "version": "0.0.0",
+  "icons": {
+    "64": "logo.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.facebook.com/*",
+        "http://www.facebook.com/*",
+        "https://medium.com/*"
+      ],
+      "js": ["index.js"]
+    }
+  ]
+}
